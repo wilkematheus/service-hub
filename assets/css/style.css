@@ -95,6 +95,10 @@ body {
     background-color: #ffffff;
     border: 1px solid #e5e7eb;
     border-radius: 14px;
+    box-shadow: 0 4px 14px rgb(15 23 42 / 0.05);
+    transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .indicador-icone {
@@ -135,8 +139,9 @@ body {
     font-size: 14px;
 }
 
-.indicador {
-    box-shadow: 0 4px 14px rgb(15 23 42 / 0.05);
+.indicador:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgb(15 23 42 / 0.09);
 }
 
 .pedido {
@@ -146,6 +151,9 @@ body {
     border: 1px solid #e5e7eb;
     border-radius: 16px;
     box-shadow: 0 4px 14px rgb(15 23 42 / 0.05);
+    transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .icone-pedido {
@@ -160,6 +168,11 @@ body {
     color: #111827;
     font-size: 18px;
     font-weight: 700;
+}
+
+.pedido:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgb(15 23 42 / 0.09);
 }
 
 .cliente {
@@ -234,4 +247,111 @@ body {
     margin-right: 6px;
     color: #94a3b8;
     font-size: 16px;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 11px 18px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: 1px solid #2563eb;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgb(37 99 235 / 0.18);
+    transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.botao:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgb(37 99 235 / 0.22);
+}
+
+.botao:focus {
+    outline: 3px solid #bfdbfe;
+    outline-offset: 3px;
+}
+
+.ver-todos {
+    margin: 32px 0;
+    text-align: center;
+}
+
+.ver-todos a {
+    display: inline-block;
+    padding-bottom: 3px;
+    color: #2563eb;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.ver-todos a:hover {
+    color: #1d4ed8;
+
+    border-bottom-color: #1d4ed8;
+}
+
+.spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    vertical-align: -2px;
+    border: 2px solid #cbd5e1;
+    border-top-color: #2563eb;
+    border-radius: 50%;
+    animation: girar 0.8s linear infinite;
+}
+
+@keyframes girar {
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+.rodape {
+    margin-top: 16px;
+    padding: 32px 16px;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    color: #64748b;
+}
+
+.rodape p {
+    margin: 10px 0;
+
+    font-size: 13px;
+}
+
+.sincronizacao {
+    color: #475569;
+}
+
+.sistema-atualizado {
+    color: #15803d;
+}
+
+.sistema-atualizado i {
+    margin-right: 4px;
+}
+
+.ultima-atualizacao {
+    color: #64748b;
+}
+
+.ultima-atualizacao i {
+    margin-right: 4px;
 }
